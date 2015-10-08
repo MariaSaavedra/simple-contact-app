@@ -10,6 +10,19 @@
         <link rel="stylesheet" href="assets/css/styles.css">
     </head>
     <body>
+        <div class="top-navigation">
+            <ul class="inner-navigation">
+                <li class="navigation-link"><a href="#">Home</a></li>
+                <li class="navigation-link"><a href="#">Groups</a></li>
+                <li class="navigation-link"><a href="#">Contacts</a></li>
+            </ul>
+        </div>
+        
+        <div class="contact-search">
+            <input type="search">
+            <div class="search-icon"><i class="fa fa-search"></i></div>
+        </div>
+        
         <script src="node_modules/lodash/index.js"></script>
         <script src="node_modules/angular/angular.js"></script>
         <script src="app/app.js"></script>
