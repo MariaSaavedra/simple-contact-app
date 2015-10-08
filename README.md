@@ -12,4 +12,4 @@ Download Vagrant, and install it.
 
 Clone this repo, and in the command line, run 'vagrant up' inside this project.
 
-Access the web application through, 192.168.33.11
+Access the web application through, 192.168.33.10
