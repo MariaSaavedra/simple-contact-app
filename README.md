@@ -4,6 +4,10 @@ A simple contact app, the desired product should be a simple Contacts applicatio
 - Virtualbox, https://www.virtualbox.org/wiki/Downloads
 - Vagrant, https://www.vagrantup.com/
 - Scotchbox, a preconfigured Vagrant Box with a full array of LAMP Stack features to get you up and running with Vagrant in no time.
+- Gulp
+- Lodash
+- Angular.js
+- PHP
 
 #Instructions:
 
