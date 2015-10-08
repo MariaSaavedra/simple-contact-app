@@ -10,6 +10,12 @@ A simple contact app, the desired product should be a simple Contacts applicatio
 Download Virtualbox, and install it.
 Download Vagrant, and install it.
 
-Clone this repo, and in the command line, run 'vagrant up' inside this project.
+Clone this repo, and in the command lines run the following:
+
+[in root folder, this command may take a few minutes to run.]
+vagrant up 
+
+[in \public folder]
+npm install
 
 Access the web application through, 192.168.33.10
