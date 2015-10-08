@@ -1,0 +1,27 @@
+{
+  "name": "simple-contact-app",
+  "version": "0.0.0",
+  "description": "This is a simple contact app created for the lovely people at Cremalab.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MariaSaavedra/simple-contact-app.git"
+  },
+  "keywords": [
+    "simple",
+    "contact",
+    "app",
+    "vagrant"
+  ],
+  "author": "Maria Saavedra",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MariaSaavedra/simple-contact-app/issues"
+  },
+  "homepage": "https://github.com/MariaSaavedra/simple-contact-app#readme",
+  "dependencies": {
+    "angular": "^1.4.7",
+    "gulp": "^3.9.0",
+    "lodash": "^3.10.1"
+  }
+}
