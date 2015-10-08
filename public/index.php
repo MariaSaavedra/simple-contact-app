@@ -26,5 +26,6 @@
         <script src="node_modules/lodash/index.js"></script>
         <script src="node_modules/angular/angular.js"></script>
         <script src="app/app.js"></script>
+        <script src="app/common/contact-service.js"></script>
     </body>
 </html>
