@@ -1,20 +1,16 @@
 <?php
-require "api/Slim/Slim.php";
-
-\Slim\Slim::registerAutoloader();
-
+// require "api/Slim/Slim.php";
+// \Slim\Slim::registerAutoloader();
 // create new Slim instance
-$app = new \Slim\Slim();
-
+// $app = new \Slim\Slim();
 // add new Route 
-$app->get("/", function () {
-    echo "<h1>Hello Slim World</h1>";
-});
+// $app->get("/", function () {
+//    echo "<h1>Hello Slim World</h1>";
+// });
 
 // run the Slim app
-$app->run();
-
-?>
+// $app->run();
+?> 
 
 <!doctype html>
 <html ng-app="app">
@@ -35,7 +31,11 @@ $app->run();
                 <li class="navigation-link"><a href="#">Contacts</a></li>
             </ul>
         </div>
-        
+        <div ng-controller="contactController">
+            <span ng-repeat="contact in contacts">
+                <span ng-bind="contact.firstName"></span>
+            </span>
+        </div>
         <div class="contact-search">
             <input type="search">
             <div class="search-icon"><i class="fa fa-search"></i></div>
@@ -45,5 +45,6 @@ $app->run();
         <script src="node_modules/angular/angular.js"></script>
         <script src="app/app.js"></script>
         <script src="app/common/contact-service.js"></script>
+        <script src="app/common/contact-controller.js"></script>
     </body>
 </html>

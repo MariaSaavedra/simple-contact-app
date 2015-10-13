@@ -8,15 +8,9 @@ angular.module('contactService', [])
                 data: JSON.stringify(contact)
             });
         },
-        loadContact: function () {
+        loadContacts: function () {
             return $http({
-                url: '../',
-                method: "GET"
-            });
-        },
-        loadAllContacts: function (){
-            return $http({
-                url: '../',
+                url: 'api/names',
                 method: "GET"
             });
         }

@@ -7,7 +7,7 @@ A simple contact app, the desired product should be a simple Contacts applicatio
 - Gulp
 - Lodash
 - Angular.js
-- PHP
+- PHP w/ Slim
 
 #Instructions:
 
