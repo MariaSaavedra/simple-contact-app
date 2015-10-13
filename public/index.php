@@ -1,3 +1,21 @@
+<?php
+require "../Slim/Slim/Slim.php";
+
+\Slim\Slim::registerAutoloader();
+
+// create new Slim instance
+$app = new \Slim\Slim();
+
+// add new Route 
+$app->get("/", function () {
+    echo "<h1>Hello Slim World</h1>";
+});
+
+// run the Slim app
+$app->run();
+
+?>
+
 <!doctype html>
 <html ng-app="app">
    <head>
