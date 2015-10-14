@@ -413,7 +413,7 @@ html {
   .contact-card .icons {
     position: absolute;
     top: 1rem;
-    right: 1rem; }
+    right: 3rem; }
     .contact-card .icons span {
       margin: 0 5px;
       cursor: pointer; }
