@@ -93,7 +93,7 @@ function addContact() {
 function updateContact($id) {
 	$request = Slim::getInstance()->request();
 	$body = $request->getBody();
-	$wine = json_decode($body);
+	$contact = json_decode($body);
 	$sql = "UPDATE contact SET firstName=:firstName, lastName=:lastName, phone=:phone, email=:email, picture=:picture WHERE id=:id";
 	try {
 		$db = getConnection();
