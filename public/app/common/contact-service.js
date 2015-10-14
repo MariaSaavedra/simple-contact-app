@@ -11,7 +11,7 @@ angular.module('contactService', [])
         deleteContact: function(id){
             return $http({
                url: 'api/contacts/' + id,
-                methodd: "DELETE"
+                method: "DELETE"
             });
         },
         loadContacts: function () {

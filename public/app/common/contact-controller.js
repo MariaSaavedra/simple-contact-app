@@ -13,6 +13,7 @@ $scope.deleteContact = function(id){
     if (r == true){
         ContactFactory.deleteContact(id).success(function(){
             alert("Contact Deleted");
+            location.reload();
         });
     } else {
         alert("Contact not deleted!");

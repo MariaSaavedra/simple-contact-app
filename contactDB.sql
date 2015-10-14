@@ -10,7 +10,7 @@ CREATE TABLE contacts (
   `email` varchar(45) DEFAULT NULL,
   `picture` varchar(256) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=41 DEFAULT CHARSET=latin1;
+);
 
 INSERT INTO contacts (firstName, lastName, phone, email) VALUES 
 ('Maria', 'Saavedra','913-602-0290','info@msaavedra.com'),
