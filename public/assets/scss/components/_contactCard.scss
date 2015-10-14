@@ -1,0 +1,45 @@
+.contact-card {
+    display: block;
+    margin: 1px 0;
+    padding: 1rem;
+    width: 100%;
+    background: #fff;
+    -webkit-box-shadow: 5px 3px 20px -5px rgba(0,0,0,0.22);
+    -moz-box-shadow: 5px 3px 20px -5px rgba(0,0,0,0.22);
+    box-shadow: 5px 3px 20px -5px rgba(0,0,0,0.22);
+    position: relative;
+    .first-name,
+    .last-name {
+        font-weight: bold;
+        padding: 1rem 0;
+        color: #1e1e1e;
+    }
+    .email,
+    .phone {
+        display: block;
+        font-size: .8rem;
+        margin: .3rem 0;
+        color: #333;
+    }
+    .icons {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        span {
+            margin: 0 5px; 
+            cursor: pointer;
+        }
+    }
+}
+
+.add-contact {
+    .user-plus {
+        font-size: 3rem;
+        color: #2196F3;
+        position: absolute;
+        bottom: 1rem;
+        right: 1rem;
+        cursor: pointer;
+    }
+}
+

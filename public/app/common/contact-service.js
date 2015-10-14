@@ -8,9 +8,15 @@ angular.module('contactService', [])
                 data: JSON.stringify(contact)
             });
         },
+        deleteContact: function(id){
+            return $http({
+               url: 'api/contacts/' + id,
+                methodd: "DELETE"
+            });
+        },
         loadContacts: function () {
             return $http({
-                url: 'api/names',
+                url: 'api/contacts',
                 method: "GET"
             });
         }

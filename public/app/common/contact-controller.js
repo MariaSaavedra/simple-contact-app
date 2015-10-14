@@ -6,7 +6,17 @@ $scope.loadContacts = function () {
         $scope.contacts = contacts;
     });
 };
-    
 $scope.loadContacts();
+    
+$scope.deleteContact = function(id){
+    var r = confirm("You're about to delete a contact, are you sure?");
+    if (r == true){
+        ContactFactory.deleteContact(id).success(function(){
+            alert("Contact Deleted");
+        });
+    } else {
+        alert("Contact not deleted!");
+    }
+};
     
 }]);

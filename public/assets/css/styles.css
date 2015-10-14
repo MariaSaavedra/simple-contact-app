@@ -357,3 +357,71 @@ table {
 td,
 th {
   padding: 0; }
+
+body,
+html {
+  height: 100%;
+  font-size: 16px;
+  overflow-x: hidden;
+  max-width: 960px;
+  margin: 0 auto;
+  position: relative;
+  background: #fff;
+  box-shadow: 0 4px 6px 1px rgba(50, 50, 50, 0.14); }
+
+.contact-search {
+  width: 100%; }
+  .contact-search .search {
+    width: 50%;
+    padding: .5rem;
+    margin: 1rem 2rem; }
+  .contact-search .search-icon {
+    position: relative;
+    left: -4.25rem; }
+
+.header {
+  background: #2196F3;
+  width: 100%;
+  padding: 1rem 2rem; }
+  .header h1 {
+    font-size: 1.5rem;
+    font-weight: 100;
+    color: #fff;
+    margin: 0; }
+
+.contact-card {
+  display: block;
+  margin: 1px 0;
+  padding: 1rem;
+  max-width: 350px;
+  background: #fff;
+  -webkit-box-shadow: 5px 3px 20px -5px rgba(0, 0, 0, 0.22);
+  -moz-box-shadow: 5px 3px 20px -5px rgba(0, 0, 0, 0.22);
+  box-shadow: 5px 3px 20px -5px rgba(0, 0, 0, 0.22);
+  position: relative; }
+  .contact-card .first-name,
+  .contact-card .last-name {
+    font-weight: bold;
+    padding: 1rem 0;
+    color: #1e1e1e; }
+  .contact-card .email,
+  .contact-card .phone {
+    display: block;
+    font-size: .8rem;
+    margin: .3rem 0;
+    color: #333; }
+  .contact-card .icons {
+    position: absolute;
+    top: 1rem;
+    right: 1rem; }
+    .contact-card .icons span {
+      margin: 0 5px;
+      cursor: pointer; }
+
+.add-contact .user-plus {
+  font-size: 3rem;
+  color: #2196F3;
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  cursor: pointer; }

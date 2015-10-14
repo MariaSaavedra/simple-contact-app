@@ -24,22 +24,38 @@
         <link rel="stylesheet" href="assets/css/styles.css">
     </head>
     <body>
-        <div class="top-navigation">
-            <ul class="inner-navigation">
-                <li class="navigation-link"><a href="#">Home</a></li>
-                <li class="navigation-link"><a href="#">Groups</a></li>
-                <li class="navigation-link"><a href="#">Contacts</a></li>
-            </ul>
+        <div class="header">
+            <h1>Contacts</h1>
         </div>
-        <div ng-controller="contactController">
-            <span ng-repeat="contact in contacts">
-                <span ng-bind="contact.firstName"></span>
-            </span>
-        </div>
+        
         <div class="contact-search">
-            <input type="search">
-            <div class="search-icon"><i class="fa fa-search"></i></div>
+            <input type="search" class="search">
+            <span class="search-icon"><i class="fa fa-search"></i></span>
         </div>
+        
+        <div ng-controller="contactController">
+            <div class="contact-card" ng-repeat="contact in contacts" ng-attr-contact-id="{{contact.id}}">
+                <div class="full-name">
+                    <span class="first-name" ng-bind="contact.firstName"></span>
+                    <span class="last-name" ng-bind="contact.lastName"></span>
+                </div>
+                <div class="contact-details">
+                    <span class="phone" ng-bind="contact.phone"></span>
+                    <span class="email" ng-bind="contact.email"></span>
+                </div>
+                <div class="icons">
+                    <span><i class="fa fa-pencil"></i></span>
+                    <span><i class="fa fa-star-o"></i></span>
+                    <span ng-click="deleteContact(contact.id);"><i class="fa fa-times"></i></span>
+                </div>
+            </div>
+            
+            <div class="add-contact">
+                <span class="user-plus"><i class="fa fa-user-plus"></i></span>
+            </div>
+            
+        </div>
+
         
         <script src="node_modules/lodash/index.js"></script>
         <script src="node_modules/angular/angular.js"></script>
