@@ -379,6 +379,9 @@ html {
     position: relative;
     left: -4.25rem; }
 
+.contact-form .contact-input {
+  display: block; }
+
 .header {
   background: #2196F3;
   width: 100%;

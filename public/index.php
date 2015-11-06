@@ -27,7 +27,16 @@
         <div class="header">
             <h1>Contacts</h1>
         </div>
-        
+        <div class="contact-form modal" style="border: 1px solid red;">
+            <form>
+                <input class="contact-input" ng-model="user.firstName" id="firstName" type="text" placeholder="First Name">
+                <input class="contact-input" ng-model="user.lastName" id="lastName" type="text" placeholder="Last Name"> 
+                <input class="contact-input" ng-model="user.phone" id="phone" type="phone" placeholder="000-000-0000">
+                <input class="contact-input" ng-model="user.email" id="email" type="email" placeholder="E-mail Address">
+                
+            </form>
+        </div>
+         <pre>user = {{user | json}}</pre>
         <div class="contact-search">
             <input type="search" class="search">
             <span class="search-icon"><i class="fa fa-search"></i></span>
