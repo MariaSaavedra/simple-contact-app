@@ -1,9 +1,9 @@
 angular.module('contactService', [])
 .factory('ContactFactory', ['$q','$timeout', '$http', function ($q, $timeout, $http) {
     return {
-        saveContact: function (contact) {
+        addContact: function (contact) {
             return $http({
-                url: '../',
+                url: 'api/contacts',
                 method: "POST",
                 data: JSON.stringify(contact)
             });

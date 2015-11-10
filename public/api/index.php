@@ -69,17 +69,16 @@ function getContact($id) {
 
 function addContact() {
 	error_log('addContact\n', 3, '/var/tmp/php.log');
-	$request = Slim::getInstance()->request();
+	$request = Slim\Slim::getInstance()->request();
 	$contact = json_decode($request->getBody());
-	$sql = "INSERT INTO contacts (firstName, lastName, phone, email, picture) VALUES (:firstName, :lastName, :phone, :email, :picture)";
+	$sql = "INSERT INTO contacts (firstName, lastName, phone, email) VALUES (:firstName, :lastName, :phone, :email)";
 	try {
 		$db = getConnection();
 		$stmt = $db->prepare($sql);  
-		$stmt->bindParam("firstName", $contacts->firstName);
-		$stmt->bindParam("lastName", $contacts->lastName);
-		$stmt->bindParam("phone", $contacts->phone);
-		$stmt->bindParam("email", $contacts->email);
-		$stmt->bindParam("picture", $contacts->picture);
+		$stmt->bindParam("firstName", $contact->firstName);
+		$stmt->bindParam("lastName", $contact->lastName);
+		$stmt->bindParam("phone", $contact->phone);
+		$stmt->bindParam("email", $contact->email);
 		$stmt->execute();
 		$contact->id = $db->lastInsertId();
 		$db = null;
@@ -89,6 +88,7 @@ function addContact() {
 		echo '{"error":{"text":'. $e->getMessage() .'}}'; 
 	}
 }
+
 
 function updateContact($id) {
 	$request = Slim::getInstance()->request();

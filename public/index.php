@@ -24,6 +24,7 @@
         <link rel="stylesheet" href="assets/css/styles.css">
     </head>
     <body>
+        <div ng-controller="contactController">
         <div class="header">
             <h1>Contacts</h1>
         </div>
@@ -33,7 +34,7 @@
                 <input class="contact-input" ng-model="user.lastName" id="lastName" type="text" placeholder="Last Name"> 
                 <input class="contact-input" ng-model="user.phone" id="phone" type="phone" placeholder="000-000-0000">
                 <input class="contact-input" ng-model="user.email" id="email" type="email" placeholder="E-mail Address">
-                
+                <input type="submit" ng-click="addContact(user)">
             </form>
         </div>
          <pre>user = {{user | json}}</pre>
@@ -42,7 +43,7 @@
             <span class="search-icon"><i class="fa fa-search"></i></span>
         </div>
         
-        <div ng-controller="contactController">
+        
             <div class="contact-card" ng-repeat="contact in contacts" ng-attr-contact-id="{{contact.id}}">
                 <div class="full-name">
                     <span class="first-name" ng-bind="contact.firstName"></span>

@@ -8,7 +8,6 @@ CREATE TABLE contacts (
   `lastName` varchar(45) DEFAULT NULL,
   `phone` varchar(45) DEFAULT NULL,
   `email` varchar(45) DEFAULT NULL,
-  `picture` varchar(256) DEFAULT NULL,
   PRIMARY KEY (`id`)
 );
 

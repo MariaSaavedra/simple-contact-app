@@ -6,8 +6,15 @@ $scope.loadContacts = function () {
         $scope.contacts = contacts;
     });
 };
-$scope.loadContacts();
+$scope.loadContacts();   
     
+    
+$scope.addContact = function (user) {
+    ContactFactory.addContact(user).success(function () {
+        $scope.contacts.push(user);
+    });
+};
+
 $scope.deleteContact = function(id){
     var r = confirm("You're about to delete a contact, are you sure?");
     if (r == true){
